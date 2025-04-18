@@ -10,18 +10,42 @@
     <h1 class="mb-4">Descarga de Reportes Delihealths</h1>
 
     <div class="row g-4">
+
       <div class="col-md-6">
-        <a href="/generar/telemedicina" class="btn btn-primary w-100">📄 Telemedicina (Primarios)</a>
+        <a href="/descargar/filtro1" class="btn btn-primary w-100">
+          📄 Telemedicina (Primarios)<br>
+          <small>{{ conteos["Filtro 1"] }} registros</small>
+        </a>
       </div>
+
       <div class="col-md-6">
-        <a href="/generar/usabilidad" class="btn btn-success w-100">📈 Usabilidad (Primarios con Consulta)</a>
+        <a href="/descargar/filtro4" class="btn btn-success w-100">
+          📈 Usabilidad (Primarios con Consulta)<br>
+          <small>{{ conteos["Filtro 4"] }} registros</small>
+        </a>
       </div>
+
       <div class="col-md-6">
-        <a href="/generar/familiares" class="btn btn-warning w-100">👨‍👩‍👧 Familiares (Secundarios)</a>
+        <a href="/descargar/filtro3" class="btn btn-warning w-100">
+          👨‍👩‍👧 Familiares (Secundarios)<br>
+          <small>{{ conteos["Filtro 3"] }} registros</small>
+        </a>
       </div>
+
       <div class="col-md-6">
-        <a href="/generar/usabilidad_familiares" class="btn btn-info w-100">📊 Usabilidad Familiares (Con Consulta)</a>
+        <a href="/descargar/filtro2" class="btn btn-info w-100">
+          📊 Usabilidad Familiares (Con Consulta)<br>
+          <small>{{ conteos["Filtro 2"] }} registros</small>
+        </a>
       </div>
+
+      <div class="col-12">
+        <a href="/descargar/todos" class="btn btn-dark w-100">
+          📥 Descargar Todos los Datos<br>
+          <small>{{ conteos["Todos"] }} registros</small>
+        </a>
+      </div>
+
     </div>
   </div>
 </body>
